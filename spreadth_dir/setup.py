@@ -4,7 +4,7 @@ setup(
     name='spreadth',
     version='1.0',
     packages=['spreadth'],
-    package_dir={'': 'spreadth_dir/src'},
+    package_dir={'': 'src'},
     url='',
     license='Proprietary',
     author='jmellin',
