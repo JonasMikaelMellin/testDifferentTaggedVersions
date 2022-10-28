@@ -1,0 +1,54 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="3.10" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E127" />
+          <option value="E302" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N812" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="pyspark-stubs==3.0.0.post3" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="pyspark" />
+          <option value="IPython" />
+          <option value="pyspark.*" />
+          <option value="caelum_exec_ctrl.caelum_log.delta" />
+          <option value="caelum_exec_ctrl.caelum_src_cfg.delta" />
+          <option value="caelum_exec_ctrl.caelum_context_manager.FuncLogInfo" />
+          <option value="ClusterSettings.spark" />
+          <option value="test.test_triclass.TestCase.*" />
+          <option value="test.test_triclass.TestCase.triclass" />
+          <option value="test.test_triclass.TestCase.all_coordinates" />
+          <option value="test.test_triclass.TestCase.Triangle_class" />
+          <option value="test.test_triclass.TestCase.type_of_flow_is_positive" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
