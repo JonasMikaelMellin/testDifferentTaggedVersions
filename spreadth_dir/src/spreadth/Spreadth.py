@@ -16,4 +16,8 @@ class Spreadth:
         df_summary = self._df.select(col_nm).summary()
         rslt: numbers.Number = df_summary[df_summary["summary"]=='25%'].select(col_nm).collect()[0][0]
         return rslt
-    
+
+    def upper_quartile(self, col_nm: str) -> numbers.Number:
+        df_summary = self._df.select(col_nm).summary()
+        rslt: numbers.Number = df_summary[df_summary["summary"]=='75%'].select(col_nm).collect()[0][0]
+        return rslt
