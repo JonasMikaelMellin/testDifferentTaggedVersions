@@ -21,3 +21,9 @@ class Spreadth:
         df_summary = self._df.select(col_nm).summary()
         rslt: numbers.Number = df_summary[df_summary["summary"]=='75%'].select(col_nm).collect()[0][0]
         return rslt
+
+    def upper_bound(self, col_nm: str, sensitivity: numbers.Number = 1.5) -> numbers.Number:
+        uq = self.upper_quartile(col_nm)
+        lq = self.lower_quartile(col_nm)
+        iqr: numbers.Number = uq-lq
+        return self.median(col_nm) + iqr * sensitivity
